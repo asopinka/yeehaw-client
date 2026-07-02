@@ -14,11 +14,11 @@ config-instance.local.ts
 sslcert
 packages
 /srv
-tunnelmole.bundle.js
+yeehaw.bundle.js
 .nopublish
 .nvim.lua
 
 #Ignore single executable binaries
-tmole.exe
-tmole-linux
-tmole-mac
+yeehaw.exe
+yeehaw-linux
+yeehaw-mac

@@ -15,7 +15,7 @@ const setIsCli = (isCli: boolean) => {
 };
 
 const getConnectionInfo = () => {
-    connectionInfo.tunnelmoleVersion = version
+    connectionInfo.yeehawVersion = version
     return connectionInfo;
 }
 

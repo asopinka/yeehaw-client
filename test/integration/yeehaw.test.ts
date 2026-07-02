@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import fs from "fs";
 import FormData from 'form-data';
-import { tunnelmole } from "../../src";
+import { yeehaw } from "../../src";
 import { URLSearchParams } from "url";
 import { app } from "./test-server/app";
 import config from "../../config.js";
@@ -13,13 +13,13 @@ import { nanoid } from 'nanoid';
 
 const gzip = promisify(zlib.gzip);
 
-describe("Tunnelmole integration tests", () => {
+describe("Yee-Haw integration tests", () => {
     // Initialise connection
     const port = 3001;
     let url: string;
 
     beforeAll(async () => {
-        // Start Tunnelmole, the URL will tunnel to `localhost:${port}`
+        // Start Yee-Haw, the URL will tunnel to `localhost:${port}`
         const isLocal = config.hostip.endpoint === 'ws://localhost:8081';
 
         // Set domain for local testing to avoid the need to pause and set the hostname in /etc/hosts each time
@@ -38,7 +38,7 @@ describe("Tunnelmole integration tests", () => {
             }); 
         }); 
 
-        url = await tunnelmole({
+        url = await yeehaw({
             port,
             domain
         });

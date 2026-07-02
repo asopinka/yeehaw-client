@@ -3,7 +3,7 @@ import deepmerge from 'deepmerge';
 
 const baseConfig = {
     hostip: {
-        endpoint: "service.tunnelmole.com",
+        endpoint: "service.yeehaw.sh",
         port: "80"
     },
     runtime: {

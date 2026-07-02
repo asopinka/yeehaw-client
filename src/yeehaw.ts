@@ -8,7 +8,7 @@ import { setIsCli } from './websocket/connection-info-service.js';
 import detectPort from 'detect-port';
 import chalk from 'chalk';
 
-export default async function tunnelmole(
+export default async function yeehaw(
     options: Options,
     isCli = false
 ): Promise<string> {
@@ -34,9 +34,9 @@ export default async function tunnelmole(
 ${chalk.yellow.bold(`
     You currently don't have anything running on port ${port}`)}. 
     
-    For Tunnelmole to work, you'll need to start your service on port ${chalk.bold(port)} so that requests from the internet can reach your service, then restart Tunnelmole. 
+    For Yee-Haw to work, you'll need to start your service on port ${chalk.bold(port)} so that requests from the internet can reach your service, then restart Yee-Haw. 
     
-    You may have also chosen the wrong port, in which case, find out what port your service is actually running on and start Tunnelmole with that port instead.
+    You may have also chosen the wrong port, in which case, find out what port your service is actually running on and start Yee-Haw with that port instead.
 `
         );
 

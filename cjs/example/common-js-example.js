@@ -1,5 +1,5 @@
-const tunnelmole = require('tunnelmole/cjs');
+const yeehaw = require('yeehaw/cjs');
 
-tunnelmole({
+yeehaw({
     port: 3000
 });

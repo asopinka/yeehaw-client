@@ -1,17 +1,17 @@
 import { Command } from "commander";
-import tunnelmole from "../tunnelmole.js";
+import yeehaw from "../yeehaw.js";
 import { Options } from "../options.js";
 import isNumber from 'is-number';
 import { setApiKey } from "../identity/api-key-service.js";
 import { unreserveDomain } from "../domains/unreseve-domain.js";
 
 /**
- * Build Options from the command line input, then pass them off to tunnelmole()
+ * Build Options from the command line input, then pass them off to yeehaw()
  */
 export default async function dispatchCommand(arg0 : any, command : Command) {
     const options : Options = {};
 
-    // If the first argument is a number, launch Tunnelmole and expose the port
+    // If the first argument is a number, launch Yee-Haw and expose the port
     if (isNumber(arg0)) {
         options.port = parseInt(arg0);
     }
@@ -19,7 +19,7 @@ export default async function dispatchCommand(arg0 : any, command : Command) {
     if (typeof command.args[1] === 'string' && command.args[1].toLowerCase() === 'as' && typeof command.args[2] === 'string') {
         options.domain = command.args[2];
     } else if (typeof command.args[1] === 'string' && command.args[1] === "AS" && typeof command.args[2] !== 'string') {
-        console.info("Please enter the domain you want to expose e.g. foo.tunnelmole.net");
+        console.info("Please enter the domain you want to expose e.g. foo.yeehaw.sh");
     } 
 
     // Check for a route handler for any options passed
@@ -32,8 +32,8 @@ export default async function dispatchCommand(arg0 : any, command : Command) {
     }
 
     if (options.port) {
-        // We have enough to Launch Tunnelmole
-        tunnelmole(options, true);
+        // We have enough to Launch Yee-Haw
+        yeehaw(options, true);
         return;
     }
 

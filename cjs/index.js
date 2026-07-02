@@ -1,3 +1,3 @@
-const tunnelmole = require('./tunnelmole');
+const yeehaw = require('./yeehaw');
 
-module.exports = tunnelmole;
+module.exports = yeehaw;

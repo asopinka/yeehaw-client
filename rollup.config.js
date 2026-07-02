@@ -3,9 +3,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 
 export default {
-    input: 'dist/bin/tunnelmole.js',
+    input: 'dist/bin/yeehaw.js',
     output: {
-        file: "tunnelmole.bundle.js",
+        file: "yeehaw.bundle.js",
         format: 'cjs'
     },
     plugins: [

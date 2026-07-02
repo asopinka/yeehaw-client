@@ -17,7 +17,7 @@ const connect = (options: Options): HostipWebSocket => {
     const sendInitialiseMessage = async () => {
         log("Sending initialise message");
 
-        // Give the server basic information on the Node version and if we are using CLI or not (in which case, tunnelmole is being run from JS code)
+        // Give the server basic information on the Node version and if we are using CLI or not (in which case, yeehaw is being run from JS code)
         const connectionInfo = await getConnectionInfo();
 
         const initialiseMessage: InitialiseMessage = {
@@ -40,7 +40,7 @@ const connect = (options: Options): HostipWebSocket => {
             domain = domain.replace('https://', '');
 
             if (!validator.isURL(domain)) {
-                console.info("Invalid domain name passed, please use the format mydomain.tunnelmole.net");
+                console.info("Invalid domain name passed, please use the format mydomain.yeehaw.sh");
                 return Promise.resolve();
             }
 

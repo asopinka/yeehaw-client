@@ -1,7 +1,7 @@
 const instanceConfig = {
     hostip: {
-        endpoint: "wss://service.tunnelmole.com:8083",
-        httpEndpoint: "https://service.tunnelmole.com"
+        endpoint: "wss://service.yeehaw.sh:8083",
+        httpEndpoint: "https://service.yeehaw.sh"
     },
     runtime: {
         enableLogging: true

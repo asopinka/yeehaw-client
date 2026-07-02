@@ -1,5 +1,5 @@
-import tunnelmole from "./tunnelmole.js";
+import yeehaw from "./yeehaw.js";
 
 export {
-    tunnelmole 
+    yeehaw 
 }

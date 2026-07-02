@@ -6,13 +6,13 @@ let storage: LocalStorage;
 
 const initStorage = async () => {
     const homedir = os.homedir();
-    const dir = homedir + '/' + '.tmole.sh';
+    const dir = homedir + '/' + '.yeehaw';
 
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir);
     }
 
-    storage = new LocalStorage(dir + '/local-storage');
+    storage = new LocalStorage(dir + '/config');
 
     return;
 }
